@@ -27,7 +27,7 @@ module.exports = {
     specimenNotCollected: {specimen_collected: 'no'}
   },
   specimenFormScenarios:{
-    page1positiveCholeraCase: ['yes','2024-02-05'],
+    page1positiveCholeraCase: ['yes','2025-06-01'],
     page2positiveCholeraCase:['both','SPEC01','positive',''],
     untestCholeraCase: ['no']
   },
@@ -36,6 +36,6 @@ module.exports = {
     nocholeraFollowup:['no','Recovered','no']
 },
 deathReportScenario:{
-  reportedDeath:['2024-02-05','health_facility','Died while sleeping']
+  reportedDeath:['2025-06-01','health_facility','Died while sleeping']
 }
 };

@@ -27,7 +27,7 @@ describe('Specimen Details Form Test', () => {
         expect(result.errors).to.be.empty;    
         expect(result.report.fields).to.deep.include({
             patient_name: 'Household Head',
-            cholera_specimen: { availability: 'yes', follow_up_date: '2024-02-05' },
+            cholera_specimen: { availability: 'yes', follow_up_date: '2025-06-01' },
             specimen_details_group: {
                 specimen_type: 'both',
                 specimen_id: 'SPEC01',

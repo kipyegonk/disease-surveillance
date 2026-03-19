@@ -27,7 +27,7 @@ describe('Death Report Form Test', () => {
         expect(result.errors).to.be.empty;
         expect(result.report.fields).to.deep.include({
             patient_death_details: {
-                date_of_death: '2024-02-05',
+                date_of_death: '2025-06-01',
                 place_of_death: 'health_facility',
                 death_information: 'Died while sleeping',
                 meta: {
