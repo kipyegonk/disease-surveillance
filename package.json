@@ -1,6 +1,6 @@
 {
   "name": "disease-surveillance",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Brink Innovation",
   "scripts": {
     "test": "npm run compile-forms && npm run compile-app-settings && npm run unittest",
@@ -11,7 +11,9 @@
     "test-forms": "mocha test/forms/**/*.spec.js --timeout 20000",
     "test-summaries": "mocha test/contact_summaries/**/*.spec.js --timeout 20000",
     "test-targets": "mocha test/targets/**/*.spec.js --timeout 20000",
-    "prettify": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.yml\" \"**/*.md\""
+    "prettify": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.yml\" \"**/*.md\"",
+    "fix-deprecated": "node scripts/fix_deprecated_fields.js",
+    "push-dhis2": "node scripts/push_to_dhis2.js"
   },
   "devDependencies": {
     "chai": "^4.3.7",

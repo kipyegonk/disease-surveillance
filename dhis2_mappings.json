@@ -1,0 +1,138 @@
+{
+  "_description": "DHIS2 integration mappings for disease-surveillance CHT app. Maps CHT form fields to DHIS2 data elements and org units. Push frequency: weekly aggregate on Sundays 23:00 EAT.",
+
+  "dhis2": {
+    "baseUrl": "https://dhis2.health.go.ke",
+    "dataSet": "disease_surveillance_weekly",
+    "orgUnitLevel": "facility",
+    "pushSchedule": "0 23 * * 0"
+  },
+
+  "mappings": [
+
+    {
+      "_comment": "── CHOLERA ─────────────────────────────────────────────",
+      "chtForm": "household_member_assessment",
+      "dhis2DataElement": "DE_CHOLERA_SUSPECTED",
+      "dhis2DataElementName": "Suspected Cholera Cases",
+      "aggregation": "count",
+      "filter": "fields.case_definition === 'yes'"
+    },
+    {
+      "chtForm": "specimen_details",
+      "dhis2DataElement": "DE_CHOLERA_SPECIMEN_COLLECTED",
+      "dhis2DataElementName": "Cholera Specimens Collected",
+      "aggregation": "count",
+      "filter": "fields.availability === 'yes'"
+    },
+    {
+      "chtForm": "cholera_suspicion_follow_up",
+      "dhis2DataElement": "DE_CHOLERA_FOLLOWUP_DONE",
+      "dhis2DataElementName": "Cholera Cases Followed Up",
+      "aggregation": "count",
+      "filter": "true"
+    },
+    {
+      "chtForm": "death_report",
+      "dhis2DataElement": "DE_CHOLERA_DEATHS",
+      "dhis2DataElementName": "Deaths Attributed to Cholera",
+      "aggregation": "count",
+      "filter": "fields.cause_of_death === 'cholera'"
+    },
+
+    {
+      "_comment": "── MALARIA ──────────────────────────────────────────────",
+      "chtForm": "malaria_assessment",
+      "dhis2DataElement": "DE_MALARIA_SUSPECTED",
+      "dhis2DataElementName": "Suspected Malaria Cases",
+      "aggregation": "count",
+      "filter": "fields.malaria_case_definition === 'yes'"
+    },
+    {
+      "chtForm": "malaria_rdt_result",
+      "dhis2DataElement": "DE_MALARIA_RDT_TESTED",
+      "dhis2DataElementName": "Malaria RDTs Conducted",
+      "aggregation": "count",
+      "filter": "true"
+    },
+    {
+      "chtForm": "malaria_rdt_result",
+      "dhis2DataElement": "DE_MALARIA_RDT_POSITIVE",
+      "dhis2DataElementName": "Malaria RDT Positive Results",
+      "aggregation": "count",
+      "filter": "fields.rdt_result === 'positive'"
+    },
+    {
+      "chtForm": "malaria_assessment",
+      "dhis2DataElement": "DE_MALARIA_UNDER5",
+      "dhis2DataElementName": "Malaria Suspected Cases Under 5",
+      "aggregation": "count",
+      "filter": "fields.malaria_case_definition === 'yes' && fields.patient_age_years < 5"
+    },
+
+    {
+      "_comment": "── TUBERCULOSIS ─────────────────────────────────────────",
+      "chtForm": "tb_screening",
+      "dhis2DataElement": "DE_TB_PRESUMPTIVE",
+      "dhis2DataElementName": "Presumptive TB Cases",
+      "aggregation": "count",
+      "filter": "fields.presumptive_tb === 'yes'"
+    },
+    {
+      "chtForm": "tb_screening",
+      "dhis2DataElement": "DE_TB_CONFIRMED",
+      "dhis2DataElementName": "Confirmed TB Cases",
+      "aggregation": "count",
+      "filter": "fields.tb_confirmed === 'yes'"
+    },
+    {
+      "chtForm": "tb_dot_visit",
+      "dhis2DataElement": "DE_TB_DOT_VISITS",
+      "dhis2DataElementName": "TB DOT Visits Conducted",
+      "aggregation": "count",
+      "filter": "true"
+    },
+
+    {
+      "_comment": "── MEASLES ──────────────────────────────────────────────",
+      "chtForm": "measles_screening",
+      "dhis2DataElement": "DE_MEASLES_SUSPECTED",
+      "dhis2DataElementName": "Suspected Measles Cases",
+      "aggregation": "count",
+      "filter": "fields.measles_case_definition === 'yes'"
+    },
+    {
+      "chtForm": "measles_vaccination_check",
+      "dhis2DataElement": "DE_MEASLES_UNVACCINATED",
+      "dhis2DataElementName": "Unvaccinated Children Identified",
+      "aggregation": "count",
+      "filter": "fields.measles_vaccinated === 'no'"
+    },
+
+    {
+      "_comment": "── AWD ──────────────────────────────────────────────────",
+      "chtForm": "awd_assessment",
+      "dhis2DataElement": "DE_AWD_SUSPECTED",
+      "dhis2DataElementName": "Suspected AWD Cases",
+      "aggregation": "count",
+      "filter": "fields.awd_case_definition === 'yes'"
+    },
+    {
+      "chtForm": "awd_assessment",
+      "dhis2DataElement": "DE_AWD_ORS_GIVEN",
+      "dhis2DataElementName": "AWD Cases Given ORS",
+      "aggregation": "count",
+      "filter": "fields.ors_given === 'yes'"
+    }
+  ],
+
+  "orgUnitMappings": {
+    "_description": "Maps CHT contact place IDs to DHIS2 org unit UIDs. Update with actual DHIS2 org unit UIDs from your DHIS2 instance.",
+    "example_community_health_unit_id": "DHIS2_OU_UID_001"
+  },
+
+  "pushScript": {
+    "_description": "Run this with: node scripts/push_to_dhis2.js --week=YYYY-WW",
+    "scriptPath": "scripts/push_to_dhis2.js"
+  }
+}
