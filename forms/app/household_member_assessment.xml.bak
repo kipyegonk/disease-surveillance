@@ -203,120 +203,7 @@
           <text id="/household_member_assessment/inputs/user:label">
             <value>User</value>
           </text>
-        
-          <!-- ── Malaria ── -->
-          <text id="/household_member_assessment/malaria/malaria_title:label">
-            <value>Malaria Screening</value>
-          </text>
-          <text id="/household_member_assessment/malaria/fever:label">
-            <value>Does <output value=" /household_member_assessment/patient_name "/> have fever or history of fever in the last 48 hours?</value>
-          </text>
-          <text id="/household_member_assessment/malaria/fever/yes:label"><value>Yes</value></text>
-          <text id="/household_member_assessment/malaria/fever/no:label"><value>No</value></text>
-          <text id="/household_member_assessment/malaria/chills:label">
-            <value>Does the patient have chills or rigors?</value>
-          </text>
-          <text id="/household_member_assessment/malaria/chills/yes:label"><value>Yes</value></text>
-          <text id="/household_member_assessment/malaria/chills/no:label"><value>No</value></text>
-          <text id="/household_member_assessment/malaria/headache:label">
-            <value>Does the patient have headache?</value>
-          </text>
-          <text id="/household_member_assessment/malaria/headache/yes:label"><value>Yes</value></text>
-          <text id="/household_member_assessment/malaria/headache/no:label"><value>No</value></text>
-          <text id="/household_member_assessment/malaria/rdt_conducted:label">
-            <value>Was a Rapid Diagnostic Test (RDT) conducted?</value>
-          </text>
-          <text id="/household_member_assessment/malaria/rdt_conducted/yes:label"><value>Yes</value></text>
-          <text id="/household_member_assessment/malaria/rdt_conducted/no:label"><value>No</value></text>
-          <text id="/household_member_assessment/malaria/rdt_result:label">
-            <value>What was the RDT result?</value>
-          </text>
-          <text id="/household_member_assessment/malaria/rdt_result/positive:label"><value>Positive</value></text>
-          <text id="/household_member_assessment/malaria/rdt_result/negative:label"><value>Negative</value></text>
-          <text id="/household_member_assessment/malaria/referred_to_facility:label">
-            <value>Was the patient referred to a health facility?</value>
-          </text>
-          <text id="/household_member_assessment/malaria/referred_to_facility/yes:label"><value>Yes</value></text>
-          <text id="/household_member_assessment/malaria/referred_to_facility/no:label"><value>No</value></text>
-          <text id="/household_member_assessment/malaria/malaria_case_definition:label">
-            <value>Malaria case definition met?</value>
-          </text>
-          <!-- ── TB ── -->
-          <text id="/household_member_assessment/tb/tb_title:label">
-            <value>Tuberculosis (TB) Screening</value>
-          </text>
-          <text id="/household_member_assessment/tb/cough_over_2_weeks:label">
-            <value>Does <output value=" /household_member_assessment/patient_name "/> have a cough lasting more than 2 weeks?</value>
-          </text>
-          <text id="/household_member_assessment/tb/cough_over_2_weeks/yes:label"><value>Yes</value></text>
-          <text id="/household_member_assessment/tb/cough_over_2_weeks/no:label"><value>No</value></text>
-          <text id="/household_member_assessment/tb/night_sweats:label">
-            <value>Does the patient experience night sweats?</value>
-          </text>
-          <text id="/household_member_assessment/tb/night_sweats/yes:label"><value>Yes</value></text>
-          <text id="/household_member_assessment/tb/night_sweats/no:label"><value>No</value></text>
-          <text id="/household_member_assessment/tb/weight_loss:label">
-            <value>Has the patient experienced unexplained weight loss?</value>
-          </text>
-          <text id="/household_member_assessment/tb/weight_loss/yes:label"><value>Yes</value></text>
-          <text id="/household_member_assessment/tb/weight_loss/no:label"><value>No</value></text>
-          <text id="/household_member_assessment/tb/previous_tb_treatment:label">
-            <value>Has the patient ever been treated for TB before?</value>
-          </text>
-          <text id="/household_member_assessment/tb/previous_tb_treatment/yes:label"><value>Yes</value></text>
-          <text id="/household_member_assessment/tb/previous_tb_treatment/no:label"><value>No</value></text>
-          <text id="/household_member_assessment/tb/presumptive_tb:label">
-            <value>Presumptive TB case?</value>
-          </text>
-          <!-- ── Measles ── -->
-          <text id="/household_member_assessment/measles/measles_title:label">
-            <value>Measles Screening</value>
-          </text>
-          <text id="/household_member_assessment/measles/rash_with_fever:label">
-            <value>Does <output value=" /household_member_assessment/patient_name "/> have a generalised rash with fever?</value>
-          </text>
-          <text id="/household_member_assessment/measles/rash_with_fever/yes:label"><value>Yes</value></text>
-          <text id="/household_member_assessment/measles/rash_with_fever/no:label"><value>No</value></text>
-          <text id="/household_member_assessment/measles/red_eyes:label">
-            <value>Does the patient have red eyes (conjunctivitis)?</value>
-          </text>
-          <text id="/household_member_assessment/measles/red_eyes/yes:label"><value>Yes</value></text>
-          <text id="/household_member_assessment/measles/red_eyes/no:label"><value>No</value></text>
-          <text id="/household_member_assessment/measles/measles_vaccinated:label">
-            <value>Has the patient received measles vaccination?</value>
-          </text>
-          <text id="/household_member_assessment/measles/measles_vaccinated/yes:label"><value>Yes</value></text>
-          <text id="/household_member_assessment/measles/measles_vaccinated/no:label"><value>No</value></text>
-          <text id="/household_member_assessment/measles/measles_vaccinated/unknown:label"><value>Unknown</value></text>
-          <text id="/household_member_assessment/measles/measles_case_definition:label">
-            <value>Measles case definition met?</value>
-          </text>
-          <!-- ── AWD ── -->
-          <text id="/household_member_assessment/awd/awd_title:label">
-            <value>Acute Watery Diarrhoea (AWD) Screening</value>
-          </text>
-          <text id="/household_member_assessment/awd/diarrhoea_episodes:label">
-            <value>How many diarrhoea episodes has <output value=" /household_member_assessment/patient_name "/> had in the last 24 hours?</value>
-          </text>
-          <text id="/household_member_assessment/awd/watery_stool:label">
-            <value>Is the stool watery (rice-water appearance)?</value>
-          </text>
-          <text id="/household_member_assessment/awd/watery_stool/yes:label"><value>Yes</value></text>
-          <text id="/household_member_assessment/awd/watery_stool/no:label"><value>No</value></text>
-          <text id="/household_member_assessment/awd/ors_given:label">
-            <value>Was ORS (Oral Rehydration Salts) given to the patient?</value>
-          </text>
-          <text id="/household_member_assessment/awd/ors_given/yes:label"><value>Yes</value></text>
-          <text id="/household_member_assessment/awd/ors_given/no:label"><value>No</value></text>
-          <text id="/household_member_assessment/awd/awd_referred:label">
-            <value>Was the patient referred to a health facility for AWD?</value>
-          </text>
-          <text id="/household_member_assessment/awd/awd_referred/yes:label"><value>Yes</value></text>
-          <text id="/household_member_assessment/awd/awd_referred/no:label"><value>No</value></text>
-          <text id="/household_member_assessment/awd/awd_case_definition:label">
-            <value>AWD case definition met?</value>
-          </text>
-          </translation>
+        </translation>
         <translation lang="ne">
           <text id="/household_member_assessment/area_id:label">
             <value>-</value>
@@ -564,7 +451,7 @@
         </translation>
       </itext>
       <instance>
-        <household_member_assessment id="household_member_assessment" prefix="J1!household_member_assessment!" delimiter="#" version="2026-03-21 00:00:00">
+        <household_member_assessment id="household_member_assessment" prefix="J1!household_member_assessment!" delimiter="#" version="2024-01-26 08:34:08">
           <inputs>
             <meta>
               <location>
@@ -624,36 +511,6 @@
             <shock/>
             <patient_well_being/>
           </household_member_assessment>
-
-          <malaria>
-            <fever/>
-            <chills/>
-            <headache/>
-            <rdt_conducted/>
-            <rdt_result/>
-            <referred_to_facility/>
-            <malaria_case_definition/>
-          </malaria>
-          <tb>
-            <cough_over_2_weeks/>
-            <night_sweats/>
-            <weight_loss/>
-            <previous_tb_treatment/>
-            <presumptive_tb/>
-          </tb>
-          <measles>
-            <rash_with_fever/>
-            <red_eyes/>
-            <measles_vaccinated/>
-            <measles_case_definition/>
-          </measles>
-          <awd>
-            <diarrhoea_episodes/>
-            <watery_stool/>
-            <ors_given/>
-            <awd_referred/>
-            <awd_case_definition/>
-          </awd>
           <group_review>
             <summary_name/>
             <complete_action/>
@@ -737,32 +594,6 @@
       <bind nodeset="/household_member_assessment/group_review/recommend" readonly="true()" type="string" relevant="selected( /household_member_assessment/household_member_assessment/patient_well_being , 'worsening') or selected( /household_member_assessment/household_member_assessment/patient_well_being , 'emergency')"/>
       <bind nodeset="/household_member_assessment/group_review/the_findings_followup" readonly="true()" type="string" relevant="selected( /household_member_assessment/household_member_assessment/patient_well_being , 'worsening') or selected( /household_member_assessment/household_member_assessment/patient_well_being , 'emergency')"/>
       <bind nodeset="/household_member_assessment/group_review/todo_task" readonly="true()" type="string" relevant="selected( /household_member_assessment/household_member_assessment/patient_well_being , 'worsening') or selected( /household_member_assessment/household_member_assessment/patient_well_being , 'emergency')"/>
-
-      <!-- Malaria binds -->
-      <bind nodeset="/household_member_assessment/malaria/fever" type="select1" required="true()"/>
-      <bind nodeset="/household_member_assessment/malaria/chills" type="select1" required="true()" relevant="selected(/household_member_assessment/malaria/fever,'yes')"/>
-      <bind nodeset="/household_member_assessment/malaria/headache" type="select1" required="true()" relevant="selected(/household_member_assessment/malaria/fever,'yes')"/>
-      <bind nodeset="/household_member_assessment/malaria/rdt_conducted" type="select1" required="true()" relevant="selected(/household_member_assessment/malaria/fever,'yes')"/>
-      <bind nodeset="/household_member_assessment/malaria/rdt_result" type="select1" required="true()" relevant="selected(/household_member_assessment/malaria/rdt_conducted,'yes')"/>
-      <bind nodeset="/household_member_assessment/malaria/referred_to_facility" type="select1" required="true()" relevant="selected(/household_member_assessment/malaria/fever,'yes')"/>
-      <bind nodeset="/household_member_assessment/malaria/malaria_case_definition" type="string" readonly="true()" calculate="if(selected(/household_member_assessment/malaria/fever,'yes') and (selected(/household_member_assessment/malaria/chills,'yes') or selected(/household_member_assessment/malaria/headache,'yes')),'yes','no')"/>
-      <!-- TB binds -->
-      <bind nodeset="/household_member_assessment/tb/cough_over_2_weeks" type="select1" required="true()"/>
-      <bind nodeset="/household_member_assessment/tb/night_sweats" type="select1" required="true()"/>
-      <bind nodeset="/household_member_assessment/tb/weight_loss" type="select1" required="true()"/>
-      <bind nodeset="/household_member_assessment/tb/previous_tb_treatment" type="select1" required="true()"/>
-      <bind nodeset="/household_member_assessment/tb/presumptive_tb" type="string" readonly="true()" calculate="if(selected(/household_member_assessment/tb/cough_over_2_weeks,'yes') and (selected(/household_member_assessment/tb/night_sweats,'yes') or selected(/household_member_assessment/tb/weight_loss,'yes')),'yes','no')"/>
-      <!-- Measles binds -->
-      <bind nodeset="/household_member_assessment/measles/rash_with_fever" type="select1" required="true()"/>
-      <bind nodeset="/household_member_assessment/measles/red_eyes" type="select1" required="true()" relevant="selected(/household_member_assessment/measles/rash_with_fever,'yes')"/>
-      <bind nodeset="/household_member_assessment/measles/measles_vaccinated" type="select1" required="true()"/>
-      <bind nodeset="/household_member_assessment/measles/measles_case_definition" type="string" readonly="true()" calculate="if(selected(/household_member_assessment/measles/rash_with_fever,'yes'),'yes','no')"/>
-      <!-- AWD binds -->
-      <bind nodeset="/household_member_assessment/awd/diarrhoea_episodes" type="integer" required="true()"/>
-      <bind nodeset="/household_member_assessment/awd/watery_stool" type="select1" required="true()" relevant="/household_member_assessment/awd/diarrhoea_episodes &gt; 0"/>
-      <bind nodeset="/household_member_assessment/awd/ors_given" type="select1" required="true()" relevant="/household_member_assessment/awd/diarrhoea_episodes &gt; 0"/>
-      <bind nodeset="/household_member_assessment/awd/awd_referred" type="select1" required="true()" relevant="/household_member_assessment/awd/diarrhoea_episodes &gt; 2"/>
-      <bind nodeset="/household_member_assessment/awd/awd_case_definition" type="string" readonly="true()" calculate="if(/household_member_assessment/awd/diarrhoea_episodes &gt; 2 and selected(/household_member_assessment/awd/watery_stool,'yes'),'yes','no')"/>
       <bind nodeset="/household_member_assessment/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>
@@ -900,111 +731,6 @@
         </item>
       </select1>
     </group>
-
-    <!-- ── Malaria Screening Page ── -->
-    <group appearance="field-list" ref="/household_member_assessment/malaria">
-      <label ref="jr:itext('/household_member_assessment/malaria/malaria_title:label')"/>
-      <select1 ref="/household_member_assessment/malaria/fever">
-        <label ref="jr:itext('/household_member_assessment/malaria/fever:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/malaria/fever/yes:label')"/><value>yes</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/malaria/fever/no:label')"/><value>no</value></item>
-      </select1>
-      <select1 ref="/household_member_assessment/malaria/chills">
-        <label ref="jr:itext('/household_member_assessment/malaria/chills:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/malaria/chills/yes:label')"/><value>yes</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/malaria/chills/no:label')"/><value>no</value></item>
-      </select1>
-      <select1 ref="/household_member_assessment/malaria/headache">
-        <label ref="jr:itext('/household_member_assessment/malaria/headache:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/malaria/headache/yes:label')"/><value>yes</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/malaria/headache/no:label')"/><value>no</value></item>
-      </select1>
-      <select1 ref="/household_member_assessment/malaria/rdt_conducted">
-        <label ref="jr:itext('/household_member_assessment/malaria/rdt_conducted:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/malaria/rdt_conducted/yes:label')"/><value>yes</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/malaria/rdt_conducted/no:label')"/><value>no</value></item>
-      </select1>
-      <select1 ref="/household_member_assessment/malaria/rdt_result">
-        <label ref="jr:itext('/household_member_assessment/malaria/rdt_result:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/malaria/rdt_result/positive:label')"/><value>positive</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/malaria/rdt_result/negative:label')"/><value>negative</value></item>
-      </select1>
-      <select1 ref="/household_member_assessment/malaria/referred_to_facility">
-        <label ref="jr:itext('/household_member_assessment/malaria/referred_to_facility:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/malaria/referred_to_facility/yes:label')"/><value>yes</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/malaria/referred_to_facility/no:label')"/><value>no</value></item>
-      </select1>
-    </group>
-
-    <!-- ── TB Screening Page ── -->
-    <group appearance="field-list" ref="/household_member_assessment/tb">
-      <label ref="jr:itext('/household_member_assessment/tb/tb_title:label')"/>
-      <select1 ref="/household_member_assessment/tb/cough_over_2_weeks">
-        <label ref="jr:itext('/household_member_assessment/tb/cough_over_2_weeks:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/tb/cough_over_2_weeks/yes:label')"/><value>yes</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/tb/cough_over_2_weeks/no:label')"/><value>no</value></item>
-      </select1>
-      <select1 ref="/household_member_assessment/tb/night_sweats">
-        <label ref="jr:itext('/household_member_assessment/tb/night_sweats:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/tb/night_sweats/yes:label')"/><value>yes</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/tb/night_sweats/no:label')"/><value>no</value></item>
-      </select1>
-      <select1 ref="/household_member_assessment/tb/weight_loss">
-        <label ref="jr:itext('/household_member_assessment/tb/weight_loss:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/tb/weight_loss/yes:label')"/><value>yes</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/tb/weight_loss/no:label')"/><value>no</value></item>
-      </select1>
-      <select1 ref="/household_member_assessment/tb/previous_tb_treatment">
-        <label ref="jr:itext('/household_member_assessment/tb/previous_tb_treatment:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/tb/previous_tb_treatment/yes:label')"/><value>yes</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/tb/previous_tb_treatment/no:label')"/><value>no</value></item>
-      </select1>
-    </group>
-
-    <!-- ── Measles Screening Page ── -->
-    <group appearance="field-list" ref="/household_member_assessment/measles">
-      <label ref="jr:itext('/household_member_assessment/measles/measles_title:label')"/>
-      <select1 ref="/household_member_assessment/measles/rash_with_fever">
-        <label ref="jr:itext('/household_member_assessment/measles/rash_with_fever:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/measles/rash_with_fever/yes:label')"/><value>yes</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/measles/rash_with_fever/no:label')"/><value>no</value></item>
-      </select1>
-      <select1 ref="/household_member_assessment/measles/red_eyes">
-        <label ref="jr:itext('/household_member_assessment/measles/red_eyes:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/measles/red_eyes/yes:label')"/><value>yes</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/measles/red_eyes/no:label')"/><value>no</value></item>
-      </select1>
-      <select1 ref="/household_member_assessment/measles/measles_vaccinated">
-        <label ref="jr:itext('/household_member_assessment/measles/measles_vaccinated:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/measles/measles_vaccinated/yes:label')"/><value>yes</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/measles/measles_vaccinated/no:label')"/><value>no</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/measles/measles_vaccinated/unknown:label')"/><value>unknown</value></item>
-      </select1>
-    </group>
-
-    <!-- ── AWD Screening Page ── -->
-    <group appearance="field-list" ref="/household_member_assessment/awd">
-      <label ref="jr:itext('/household_member_assessment/awd/awd_title:label')"/>
-      <input ref="/household_member_assessment/awd/diarrhoea_episodes">
-        <label ref="jr:itext('/household_member_assessment/awd/diarrhoea_episodes:label')"/>
-      </input>
-      <select1 ref="/household_member_assessment/awd/watery_stool">
-        <label ref="jr:itext('/household_member_assessment/awd/watery_stool:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/awd/watery_stool/yes:label')"/><value>yes</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/awd/watery_stool/no:label')"/><value>no</value></item>
-      </select1>
-      <select1 ref="/household_member_assessment/awd/ors_given">
-        <label ref="jr:itext('/household_member_assessment/awd/ors_given:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/awd/ors_given/yes:label')"/><value>yes</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/awd/ors_given/no:label')"/><value>no</value></item>
-      </select1>
-      <select1 ref="/household_member_assessment/awd/awd_referred">
-        <label ref="jr:itext('/household_member_assessment/awd/awd_referred:label')"/>
-        <item><label ref="jr:itext('/household_member_assessment/awd/awd_referred/yes:label')"/><value>yes</value></item>
-        <item><label ref="jr:itext('/household_member_assessment/awd/awd_referred/no:label')"/><value>no</value></item>
-      </select1>
-    </group>
-
     <group appearance="field-list summary" ref="/household_member_assessment/group_review">
       <input appearance="h1 yellow" ref="/household_member_assessment/group_review/summary_name">
         <label ref="jr:itext('/household_member_assessment/group_review/summary_name:label')"/>
