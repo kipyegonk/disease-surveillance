@@ -8,7 +8,7 @@
   "icon": "laboratory-specimen",
   "context": {
     "person": true,
-    "place": true,
-    "expression": "true"
+    "place": false,
+    "expression": "user.contact_type === 'area_health_facility_nurse'"
   }
 }
